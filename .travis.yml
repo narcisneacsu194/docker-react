@@ -5,5 +5,5 @@ services:
 before_install:
   - docker build -t narcisneacsu194/docker-react -f Dockerfile.dev .
 
-scripts:
+script:
   - docker run narcisneacsu194/docker-react npm run test -- --coverage
